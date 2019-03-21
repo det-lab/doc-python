@@ -1,2 +1,3 @@
 = Installing Anaconda
+
 Head to the Anaconda website and pick the newest version of Anaconda for your operating system: macOS, Windows, or Linux. The Graphical Installer is the most user friendly way to install but you can choose the command-line option if you prefer. For some extra information, check out this website for install details on any operating system.
