@@ -19,3 +19,21 @@ image:images/Co60_prac/1.png[]
 This small sample, one, shows that there is data in the file, and, two, gives us the titles of our columns, which we’ll reference shortly.
 
 If you ran into an error, Python should print the line that caused the problem instead of the table. Start troubleshooting at that line and try to figure out what went wrong. A good first guess is a spelling error, so double check that your imports are spelled correctly: numpy, matplotlib.pyplot, pandas. If that is the case, correct it and run your code again. Another common issue is a bad file path, so double check that your code is referencing the right path, everything is spelled correctly, slashes are in right direction (/ vs \), and your path is in “”s. Other errors could be misspelling variables between creating and referencing, missing `:` in loops, or leaving off a close bracket or parenthesis. If all else fails, search your error online - you’ll find that at least one person has had the same error before.
+
+= Plotting Data
+
+Ok, so Python in importing a csv file, reading it, and spitting out a table, but that is not helping us interpret the data. So, we’ll combine the graphing library, matplotlib.pyplot, and the data from pandas df. Both of these libraries are powerful enough that we only need one more line of code to review the data, `plt.plot(df["counts"])`. Pay attention to the syntax when using pandas instead of setting a “data” variable. Also, make sure that you spell the column of interest exactly as it reads in your data; pandas knows to read headers in an array but only if they are spelled correctly. Hopefully, there were no mistakes in that line and you should have a graph similar to this one:
+
+image::images/Co60_Prac/2.png[]
+
+Excellent! Quick and dirty and we are interpreting our data in about five lines of code! However, if we come back to this code at a later date, we might want some more context. Add a title and axis labels with:
+
+`plt.title("Cobolt 60")`
+`plt.xlabel("Frequency Channel")`
+`plt.ylabel("Count")`
+
+image::images/Co60_Prac/3.png[]
+
+= Extra Context
+
+Ok, you’ve run part of an experiment, gathered data, graphed your results, but you still want some basic information to give a little more context to this sample. 
