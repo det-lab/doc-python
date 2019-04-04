@@ -36,4 +36,6 @@ image::images/Co60_Prac/3.png[]
 
 = Extra Context
 
-Ok, you’ve run part of an experiment, gathered data, graphed your results, but you still want some basic information to give a little more context to this sample. 
+Ok, you’ve run part of an experiment, gathered data, graphed your results, but you still want some basic information to give a little more context. A strong statistical tool that might help you identify your unknown sample is standard deviation. So, using the reference data, we’ll add an extra line to print the SD for our Co60 data, `SD = np.std(df["# n"])`. This defines a new variable, SD, and uses Numpy’s function, standard deviation, on our dataframe values for the frequency channels. Follow this line with `print(‘Co60 Channel Standard Dev:’, SD)`, and you have the standard deviation for this sample plus the graph.  
+
+image::images/Co60_Prac/4.png[]
