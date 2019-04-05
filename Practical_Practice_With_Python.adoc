@@ -10,7 +10,7 @@ The first step is determining what libraries we might need. You can always impor
 
 = Set Up Data for Analyzing
 
-Download the file link:_includes/https://github.com/det-lab/doc-python/blob/master/Co60.csv[Co60] and remember where you saved it. Depending on your path, defining the variable should look something like this: `file = “/Users/Jerry/Downloads/Co60.csv”`. Also, feel free to look at the csv file through Excel, Numbers, or Sheets just to get feel for the raw data. Double checking that data is actually in your file and understanding its general structure could save some headaches in the future. 
+Download the file link:Co60.csv[Co60] and remember where you saved it. Depending on your path, defining the variable should look something like this: `file = “/Users/Jerry/Downloads/Co60.csv”`. Also, feel free to look at the csv file through Excel, Numbers, or Sheets just to get feel for the raw data. Double checking that data is actually in your file and understanding its general structure could save some headaches in the future. 
 
 Pandas is an incredibly powerful and useful library for quickly reviewing and visualizing data from an array. Set a new variable as `df` and use Pandas’ `read_csv` function to import you data in to the dataframe, ‘df = pd.read_csv(file)`. Again, a good bit of practice, check to see that data has come through, `print(df.head(5))’. I just chose 5 rows arbitrarily, but you could print any number rows or the whole data set. Run that code by pressing shift and enter at the same time and you should get an output like this:
 
