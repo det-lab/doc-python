@@ -1,8 +1,9 @@
-= Installing Anaconda
+== Installing Anaconda
+:stem: latexmath
 
 Head to the https://www.anaconda.com/distribution/[Anaconda website] and pick the newest version of Anaconda for your operating system: macOS, Windows, or Linux. The Graphical Installer is the most user friendly way to install but you can choose the command-line option if you prefer. For some extra information, check out this https://docs.anaconda.com/anaconda/install/[website] for install details on any operating system.
 
-= Getting Started
+== Getting Started
 
 Each time you want to start a new session with Python or any of the applications in Anaconda, you will need to launch Anaconda. If you chose the Graphical Installer, the process should have created a desktop or applications start button (I locked Anaconda to my dock). If you put the start button in an easily accessible place you’ll use it more!
 
@@ -20,7 +21,7 @@ This will also launch a new window or tab in your default web browser, bringing 
 
 image::images/4.png[]
 
-= Jupyter Notebook Example
+== Jupyter Notebook Example
 
 Once Jupyter Notebook is launched, in the upper right corner of the browser, click “New” and select Notebook: Python (my version in Python 3). This will open a new window or tab in your web browser similar to this.
 
@@ -28,7 +29,7 @@ image::images/4.png[]
 
 We are going to write some code to solve quadratic equations, so change the title of the Notebook to “Quadratic Formula Solver”. This is a great little problem because it has multiple functions and parts that spit out two different solutions; we’ll need to think through the detailed components as a part of the whole equation. As a reminder, here is our equation:
 
-$$x = \frac{−b \pm \sqrt{b^2 − (4 a c)}}{2 a}$$
+stem:[x = \frac{−b \pm \sqrt{b^2 − (4 a c)}}{2 a}]
 
 On its face, Jupyter Notebook can do some basic calculations. Type `2+2` in the the first command line and hit the “Run” button at the top of the page. Python is smart enough to interpret this simple request and spits out an output, 4, but that isn’t great coding, or, if imbedded in a long line of code, could be confusing to a different user or you if you forget why you wrote that particular line. 
 
@@ -46,7 +47,7 @@ Now let’s get started on our quadratic code. In an effort to help you practice
 
 Ok, we have our math library imported, time to start setting our variables. In this case, x is our output/dependant variable, so we should start defining our independent variables first: a, b, and c. And let’s use the equation:
 
-$$x^2+2x−15 = 0$$
+stem:[x^2+2x−15 = 0]
 
 Defining basic variables is as simple `a = 1`, `b = 2`, and `c = -15`. To help keep the code a bit more legible, we’ll also create a new variable, d, to represent the value underneath the square root. `d = b**2 - (4*a*c)`. (Be careful: Python doesn’t recognize the caret symbol “^” as an exponent). So, this is a slightly more complicated variable because it is built on other variables but Python will reference the values we defined earlier for us. If we come back to use this code later, we would just need to change the values for a, b, and c and leave d alone.
 
