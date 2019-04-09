@@ -25,7 +25,7 @@ image::images/4.png[]
 
 Once Jupyter Notebook is launched, in the upper right corner of the browser, click “New” and select Notebook: Python (my version in Python 3). This will open a new window or tab in your web browser similar to this.
 
-image::images/4.png[]
+image::images/5.png[]
 
 We are going to write some code to solve quadratic equations, so change the title of the Notebook to “Quadratic Formula Solver”. This is a great little problem because it has multiple functions and parts that spit out two different solutions; we’ll need to think through the detailed components as a part of the whole equation. As a reminder, here is our equation:
 
