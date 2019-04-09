@@ -14,7 +14,7 @@ Download the file link:Co60.csv[Co60] and remember where you saved it. Depending
 
 Pandas is an incredibly powerful and useful library for quickly reviewing and visualizing data from an array. Set a new variable as `df` and use Pandas’ `read_csv` function to import you data in to the dataframe, `df = pd.read_csv(file)`. Again, a good bit of practice, check to see that data has come through, `print(df.head(5))`. I just chose 5 rows arbitrarily, but you could print any number rows or the whole data set. Run that code by pressing shift and enter at the same time and you should get an output like this:
 
-image::images/Co60_prac/1.png[]
+image::images/Co60_Prac/1.png[]
 
 This small sample, one, shows that there is data in the file, and, two, gives us the titles of our columns, which we’ll reference shortly.
 
