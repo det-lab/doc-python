@@ -44,3 +44,8 @@ This is really similar to the renaming move we made earlier. If you wanted you c
 A couple useful tricks that might help speed things up. While in the terminal, you can call up previous command lines by pressing the up arrow on your keyboard. From there, you can cycle through all the commands you have typed recently with up and down. This is especially helpful when you make a mistake and the terminal doesn’t execute your opperation. Pressing up once will bring up the last command line and you can edit whatever you typed. The typical mistake is a basic spelling mistake, typing error, or syntax error like forgetting a backslash. Make your adjustments and run the line again instead of retyping the whole thing.
 
 Another useful tool is the tab button; it will help fill in the rest of a command. For example, if you only type `Des` then tab, it will fill in the remainder of `Desktop/`. This trick becomes particularly helpful when you are trying to navigate a long path and don’t want to type every letter of every directory. It also helps cutdown on spelling mistakes, which you will find incredibly annoying after a handful of errors. However, similarly named files in the same directory will obviously cause some issues, so be careful. Also, our computers are precise machines, so capitalization often factors into operations. Typing `des` and tab probably won’t file in the `Desktop/` directory.
+
+== More Practice
+If you found this useful but want to learn more, please check out http://swcarpentry.github.io/shell-novice/[Software Carpentry’s Unix Tutorial]. You’ll find even more terminal practice and some great tutorials on other programs. 
+
+
