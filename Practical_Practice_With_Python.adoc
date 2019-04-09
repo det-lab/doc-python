@@ -1,14 +1,14 @@
-= Practice Experiment
+== Practice Experiment
 
 We are going to follow part of an experiment using five known radioactive samples to identify one unknown sample. This experiment measured the gamma decay of various isotopes and we’ll be focusing on the data from Cobalt 60. Photons were shot at a sample of Co60 while in a photo channel analyzer, bounced around at different angles and speeds. A good portion of the photons made it all the way through the analyzer and distributed into different channels based on their frequency. In general, the data in this tutorial show the number of photons detected in various frequency channels.
 
-= The Set Up
+== The Set Up
 
 If you have little or no experience with Python, we highly recommend switching over to Getting Started with Python Tutorial before working through this tutorial link:Getting_Started_With_Python.adoc[here].
 
 The first step is determining what libraries we might need. You can always import libraries as needed but we have a strong idea of how we’ll analyze this data and here’s the general logic. The data is in a csv file, so `import pandas as pd` will allow us to read and manipulate the flie. We'll want to perform some math with this array, so `import numpy as np` will be very useful (this is one of the more widely used libraries in science research). And finally, we want to see the data, so `import matplotlib.pyplot as plt` will help us visualize our results.
 
-= Set Up Data for Analyzing
+== Set Up Data for Analyzing
 
 Download the file link:Co60.csv[Co60] and remember where you saved it. Depending on your path, defining the variable should look something like this: `file = “/Users/Jerry/Downloads/Co60.csv”`. Also, feel free to look at the csv file through Excel, Numbers, or Sheets just to get feel for the raw data. Double checking that data is actually in your file and understanding its general structure could save some headaches in the future. 
 
@@ -20,7 +20,7 @@ This small sample, one, shows that there is data in the file, and, two, gives us
 
 If you ran into an error, Python should print the line that caused the problem instead of the table. Start troubleshooting at that line and try to figure out what went wrong. A good first guess is a spelling error, so double check that your imports are spelled correctly: numpy, matplotlib.pyplot, pandas. If that is the case, correct it and run your code again. Another common issue is a bad file path, so double check that your code is referencing the right path, everything is spelled correctly, slashes are in right direction (/ vs \), and your path is in “”s. Other errors could be misspelling variables between creating and referencing, missing ":" in loops, or leaving off a close bracket or parenthesis. If all else fails, search your error online - you’ll find that at least one person has had the same error before.
 
-= Plotting Data
+== Plotting Data
 
 Ok, so Python in importing a csv file, reading it, and spitting out a table, but that is not helping us interpret the data. So, we’ll combine the graphing library, matplotlib.pyplot, and the data from pandas df. Both of these libraries are powerful enough that we only need one more line of code to review the data, `plt.plot(df["counts"])`. Pay attention to the syntax when using pandas instead of setting a “data” variable. Also, make sure that you spell the column of interest exactly as it reads in your data; pandas knows to read headers in an array but only if they are spelled correctly. Hopefully, there were no mistakes in that line and you should have a graph similar to this one:
 
@@ -34,8 +34,13 @@ Excellent! Quick and dirty and we are interpreting our data in about five lines 
 
 image::images/Co60_Prac/3.png[]
 
-= Extra Context
+== Extra Context
 
 Ok, you’ve run part of an experiment, gathered data, graphed your results, but you still want some basic information to give a little more context. A strong statistical tool that might help you identify your unknown sample is standard deviation. So, using the reference data, we’ll add an extra line to print the SD for our Co60 data, `SD = np.std(df["# n"])`. This defines a new variable, SD, and uses Numpy’s function, standard deviation, on our dataframe values for the frequency channels. Follow this line with `print(‘Co60 Channel Standard Dev:’, SD)`, and you have the standard deviation for this sample plus the graph.  
 
 image::images/Co60_Prac/4.png[]
+
+== Final Code for Reference
+If you need it, here's the code and some extra information. 
+
+image::images/Co60_Prac/5.png[]
