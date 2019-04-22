@@ -1,6 +1,6 @@
 name: doc-python
 title: Getting Started with Python
-version: 0.1.0
+version: master
 start_page: Getting_Started_With_Python.adoc
 nav:
 - nav.adoc
