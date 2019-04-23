@@ -7,7 +7,7 @@ endif::[]
 :idseparator: -
 :stem: latexmath
 
-Head to the https://www.anaconda.com/distribution/[Anaconda website] and pick the newest version of Anaconda for your operating system: macOS, Windows, or Linux. [line-through]#The Graphical Installer is the most user friendly way to install but you can choose the command-line option if you prefer.# (AR: I'd suggest omitting this sentence.  If a user is brand-new the command line install will be unnecessarily complicated.  If the user might be interested in this option, they probably don't need to be pointed to it.)  For some extra information, check out this https://docs.anaconda.com/anaconda/install/[website] for install details on any operating system.
+Head to the https://www.anaconda.com/distribution/[Anaconda website] and pick the newest version of Anaconda for your operating system: macOS, Windows, or Linux and use the Graphical Installer to download and install Anaconda. For some extra information, check out this https://docs.anaconda.com/anaconda/install/[website] for install details on any operating system.
 
 == Getting Started
 
@@ -46,7 +46,7 @@ Let’s get a similar answer but with more details. In the next command line, ty
 
 Notice that everything after the # is italicized, doesn’t print as an output, or effect your code. You can use # throughout your code to leave explanations for certain lines of code or save a alternate code for later use.
 
-Go back to the first input and add a new line under the first: `$$#print(2*2)$$`. Now run that line again (A shortcut for run is command return or control return). Again, notice that you only get one output of `4` even with the command `print(2*2)` in there. This is a great way to save code that modifies or alters something earlier on in your code but that you don’t want running all the time. You can go back later and delete the `#` and that line will run.
+You can also "save" code in a similar way. Add the following line: `$$#print(2*2)$$`, and run the code again (A shortcut for run is command return or control return). Again, notice that you only get one output of 4 even with two commands in the code. This is a great way to "save" code that modifies or alters something but that you don’t want running all the time. You can go back later and delete the pound sign and that line will run.
 
 image::7.png[]
 
