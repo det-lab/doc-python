@@ -1,8 +1,14 @@
 = Find and Explore the Terminal on a Mac
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+// Settings
+:idprefix:
+:idseparator: -
 
 Press the Command button and space bar at the same time to pull up the search function on your computer. Type "Terminal" and enter to start a terminal session. You should get a screen along these lines:
 
-image::images/Unix/1.png[]
+image::Unix/1.png[]
 
 == Where are you on your computer?
 
@@ -12,7 +18,7 @@ Type `pwd` (Print Working Directory) and enter/return to find your working direc
 
 Type `ls` (List Directory Contents) and it will return everything in the current directory. If you are in `/Users/”Your Name”` you should have a list of various directories on your machine: Desktop, Applications, Documents, Pictures… To get a little more information `ls -F` will return the same list but this time with `/` after each directory. That `-` followed by different letters or numbers is a “switch” or “option” added to the initial command `ls`. From time to time, modifying how a search returns information can be useful. `ls -1` returns the same list but in one column and in alphabetical order. `ls -1 -F` will return your list in alphabetical order and distinguish directories from other files. I highly recommend checking out some of the other modifiers using `man ls` to get the entire List Manual. `man “any command”` give you a long list of options and uses for that command (sometimes easier than searching on the web, sometimes not). 
 
-image::images/Unix/2.png[]
+image::Unix/2.png[]
 
 == Changing Locations and Exploring
 
@@ -31,7 +37,7 @@ I still don’t like that name, so let’s delete it entirely using `rm` (Remove
 == Create Files
 Create a new practice folder named “Unix_Practice” and then change your directory inside that folder, `cd Unix_Practice`. Now we’ll add a couple files. `touch README.txt` will create an editable text file. Again, run `ls` to make sure your file was created in your Unix_Practice folder. `nano README.txt` will allow you to enter into the file (Nano is the basic text program for Macs). ReadMe files typically describe a program’s use and maybe a bit about it’s creator, so add a couple of your own lines of text in the editor. Control “o” will allow you to save changes and control “x” brings you back to the directory.
 
-image::images/Unix/3.png[]
+image::Unix/3.png[]
 
 An alternative way to create a file is simply entering Nano with the command `nano`. Write one command, define its function, save the file, and exit back to the directory. Run `ls` and you should see two files in your Unix_Practice folder. Using `cat` (Concatenate) to print the contents of a text file instead of entering a file to read it. `cat README.txt` should display the contents of your text file.
 

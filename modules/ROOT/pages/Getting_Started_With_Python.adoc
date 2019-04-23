@@ -1,4 +1,10 @@
 == Installing Anaconda
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+// Settings
+:idprefix:
+:idseparator: -
 :stem: latexmath
 
 Head to the https://www.anaconda.com/distribution/[Anaconda website] and pick the newest version of Anaconda for your operating system: macOS, Windows, or Linux. The Graphical Installer is the most user friendly way to install but you can choose the command-line option if you prefer. For some extra information, check out this https://docs.anaconda.com/anaconda/install/[website] for install details on any operating system.
@@ -11,30 +17,30 @@ image::1.png[]
 
 Now, launch Anaconda and the Navigator should popup in a few seconds and select Jupyter Notebook.
 
-image::images/2.png[]
+image::2.png[]
 
 When you do that, you’ll notice that a terminal or command window will also start. That’s because Jupyter Notebooks and Python in general can be written directly through your machine and not just on the web.
 
-image::images/3.png[]
+image::3.png[]
 
 This will also launch a new window or tab in your default web browser, bringing you to the Jupyter Notebook home screen. Here, in particular, you can see how Python/Anaconda/Jupyter is connected to your computer. From this menu, you can create new Notebooks, edit existing Notebooks, or import new ones.
 
-image::images/4.png[]
+image::4.png[]
 
 == Jupyter Notebook Example
 
 Once Jupyter Notebook is launched, in the upper right corner of the browser, click “New” and select Notebook: Python (my version in Python 3). This will open a new window or tab in your web browser similar to this.
 
-image::images/5.png[]
+image::5.png[]
 
 We are going to write some code to solve quadratic equations, so change the title of the Notebook to “Quadratic Formula Solver”. This is a great little problem because it has multiple functions and parts that spit out two different solutions; we’ll need to think through the detailed components as a part of the whole equation. As a reminder, here is our equation:
 
-image::images/11.png[]
+image::11.png[]
 
 === Basic Math
 On its face, Jupyter Notebook can do some basic calculations. Type `2+2` in the the first command line and hit the “Run” button at the top of the page. Python is smart enough to interpret this simple request and spits out an output, 4, but that isn’t great coding, or, if imbedded in a long line of code, could be confusing to a different user or you if you forget why you wrote that particular line. 
 
-image::images/12.png[]
+image::12.png[]
 
 Let’s get a similar answer but with more details. In the next command line, type `print(2+2)` and add the comment `#example of basic math with 2+2`. Now hit the Run button and you should have the same output as before but this time we have better code and comment.
 
@@ -42,26 +48,26 @@ Notice that everything after the # is italicized, doesn’t print as an output, 
 
 Go back to the first input and add a new line under the first: `$$#print(2*2)$$`. Now run that line again (A shortcut for run is command return or control return). Again, notice that you only get one output of `4` even with the command `print(2*2)` in there. This is a great way to save code that modifies or alters something earlier on in your code but that you don’t want running all the time. You can go back later and delete the `#` and that line will run.
 
-image::images/7.png[]
+image::7.png[]
 
 == Importing Libraries
 Now let’s get started on our quadratic code. In an effort to help you practice and remind you why certain lines were added, be explicit in your #comments throughout this process. The first step is importing more advanced mathematical functionality with `import math` or `import math as m`. "import as" allows you to call up your libraries without having to type the full name of the library every time you use it. For this example we won’t use it too frequently and `math` doesn’t take that long to type, but, at some point you’ll probably need to use the library `matplotlib.pyplot` and no one wants to type `matplotlib.pyplot` more than once (even twice right now was horrible!). 
 
-== Setting Variabls
+== Setting Variables
 Ok, we have our math library imported, time to start setting our variables. In this case, x is our output/dependant variable, so we should start defining our independent variables first: a, b, and c. And let’s use the equation:
 
-image::images/13.png[]
+image::13.png[]
 
 Defining basic variables is as simple `a = 1`, `b = 2`, and `c = -15`. To help keep the code a bit more legible, we’ll also create a new variable, d, to represent the value underneath the square root. `d = b**2 - (4*a*c)`. (Be careful: Python doesn’t recognize the caret symbol “^” as an exponent). So, this is more complicated variable because it is built on other variables but Python will reference the values we defined earlier for us. If we come back to use this code later, we would just need to change the values for a, b, and c and leave d alone.
 
-image::images/8.png[]
+image::8.png[]
 
 == Setting Up Solutions
 As you know, the quadratic formula gives you two values for x so that the equation equals zero. Let’s define the first value for the “plus” and the second solution for the “minus”; `sol1 = (-b + m.sqrt(d))/2*a` and `sol2 = (-b - m.sqrt(d))/2*a`. 
 
-image::images/9.png[]
+image::9.png[]
 
 == Printing Solutions
 So now we have equations for both values of x that solve the quadratic equation but Python doesn’t know what to do with that information. We could just say `print(sol1, sol2)` and spit out the answers, but that would have no context. We can add some text to the output by using quotes in the print command. `print(‘Solution 1:’, sol1)` and `print(‘Solution 2:’, sol2)` gives some context to our output. If you run your code now, you should get your answers:
 
-image::images/10.png[]
+image::10.png[]

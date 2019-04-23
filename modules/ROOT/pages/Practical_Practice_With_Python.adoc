@@ -1,4 +1,10 @@
 == Practice Experiment
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+// Settings
+:idprefix:
+:idseparator: -
 
 We are going to follow part of an experiment using five known radioactive samples to identify one unknown sample. This experiment measured the gamma decay of various isotopes and we’ll be focusing on the data from Cobalt 60. Photons were shot at a sample of Co60 while in a photo channel analyzer, bounced around at different angles and speeds. A good portion of the photons made it all the way through the analyzer and distributed into different channels based on their frequency. In general, the data in this tutorial show the number of photons detected in various frequency channels.
 
@@ -14,7 +20,7 @@ Download the file link:Co60.csv[Co60] and remember where you saved it. Depending
 
 Pandas is an incredibly powerful and useful library for quickly reviewing and visualizing data from an array. Set a new variable as `df` and use Pandas’ `read_csv` function to import you data in to the dataframe, `df = pd.read_csv(file)`. Again, a good bit of practice, check to see that data has come through, `print(df.head(5))`. I just chose 5 rows arbitrarily, but you could print any number rows or the whole data set. Run that code by pressing shift and enter at the same time and you should get an output like this:
 
-image::images/Co60_Prac/1.png[]
+image::Co60_Prac/1.png[]
 
 This small sample, one, shows that there is data in the file, and, two, gives us the titles of our columns, which we’ll reference shortly.
 
@@ -24,7 +30,7 @@ If you ran into an error, Python should print the line that caused the problem i
 
 Ok, so Python in importing a csv file, reading it, and spitting out a table, but that is not helping us interpret the data. So, we’ll combine the graphing library, matplotlib.pyplot, and the data from pandas df. Both of these libraries are powerful enough that we only need one more line of code to review the data, `plt.plot(df["counts"])`. Pay attention to the syntax when using pandas instead of setting a “data” variable. Also, make sure that you spell the column of interest exactly as it reads in your data; pandas knows to read headers in an array but only if they are spelled correctly. Hopefully, there were no mistakes in that line and you should have a graph similar to this one:
 
-image::images/Co60_Prac/2.png[]
+image::Co60_Prac/2.png[]
 
 Excellent! Quick and dirty and we are interpreting our data in about five lines of code! However, if we come back to this code at a later date, we might want some more context. Add a title and axis labels with:
 
@@ -32,15 +38,15 @@ Excellent! Quick and dirty and we are interpreting our data in about five lines 
 `plt.xlabel("Frequency Channel")`
 `plt.ylabel("Count")`
 
-image::images/Co60_Prac/3.png[]
+image::Co60_Prac/3.png[]
 
 == Extra Context
 
 Ok, you’ve run part of an experiment, gathered data, graphed your results, but you still want some basic information to give a little more context. A strong statistical tool that might help you identify your unknown sample is standard deviation. So, using the reference data, we’ll add an extra line to print the SD for our Co60 data, `SD = np.std(df["# n"])`. This defines a new variable, SD, and uses Numpy’s function, standard deviation, on our dataframe values for the frequency channels. Follow this line with `print(‘Co60 Channel Standard Dev:’, SD)`, and you have the standard deviation for this sample plus the graph.  
 
-image::images/Co60_Prac/4.png[]
+image::Co60_Prac/4.png[]
 
 == Final Code for Reference
 If you need it, here's the code and some extra information. 
 
-image::images/Co60_Prac/5.png[]
+image::Co60_Prac/5.png[]
