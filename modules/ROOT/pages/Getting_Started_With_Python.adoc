@@ -13,15 +13,15 @@ Head to the https://www.anaconda.com/distribution/[Anaconda website] and pick th
 
 Each time you want to start a new session with Python or any of the applications in Anaconda, you will need to launch Anaconda. If you chose the Graphical Installer, the process should have created a desktop or applications start button (I locked Anaconda to my dock). If you put the start button in an easily accessible place you’ll use it more!
 
-image::1.png[]
+image::gs1.png[]
 
 Now, launch Anaconda and the Navigator should popup in a few seconds and select Jupyter Notebook.
 
-image::Get_Start/2.png[]
+image::gs2.png[]
 
 When you do that, you’ll notice that a terminal or command window will also start. That’s because Jupyter Notebooks and Python in general can be written directly through your machine and not just on the web.
 
-image::3.png[]
+image::gs3.png[]
 
 This will also launch a new window or tab in your default web browser, bringing you to the Jupyter Notebook home screen. Here, in particular, you can see how Python/Anaconda/Jupyter is connected to your computer. From this menu, you can create new Notebooks, edit existing Notebooks, or import new ones.
 
@@ -70,4 +70,4 @@ image::9.png[]
 == Printing Solutions
 So now we have equations for both values of x that solve the quadratic equation but Python doesn’t know what to do with that information. We could just say `print(sol1, sol2)` and spit out the answers, but that would have no context. We can add some text to the output by using quotes in the print command. `print(‘Solution 1:’, sol1)` and `print(‘Solution 2:’, sol2)` gives some context to our output. If you run your code now, you should get your answers:
 
-image::10.png[]
+image::/Get_Start/10.png[]
