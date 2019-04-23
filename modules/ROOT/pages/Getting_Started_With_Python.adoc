@@ -7,7 +7,7 @@ endif::[]
 :idseparator: -
 :stem: latexmath
 
-Head to the https://www.anaconda.com/distribution/[Anaconda website] and pick the newest version of Anaconda for your operating system: macOS, Windows, or Linux. The Graphical Installer is the most user friendly way to install but you can choose the command-line option if you prefer. For some extra information, check out this https://docs.anaconda.com/anaconda/install/[website] for install details on any operating system.
+Head to the https://www.anaconda.com/distribution/[Anaconda website] and pick the newest version of Anaconda for your operating system: macOS, Windows, or Linux. [line-through]#The Graphical Installer is the most user friendly way to install but you can choose the command-line option if you prefer.# (AR: I'd suggest omitting this sentence.  If a user is brand-new the command line install will be unnecessarily complicated.  If the user might be interested in this option, they probably don't need to be pointed to it.)  For some extra information, check out this https://docs.anaconda.com/anaconda/install/[website] for install details on any operating system.
 
 == Getting Started
 
