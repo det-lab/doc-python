@@ -10,13 +10,13 @@ We are going to follow part of an experiment using five known radioactive sample
 
 == The Set Up
 
-If you have little or no experience with Python, we highly recommend switching over to Getting Started with Python Tutorial before working through this tutorial xref:master@doc-python:modules:ROOT:pages:Getting_Started_With_Python.adoc[here]. updated
+If you have little or no experience with Python, we highly recommend switching over to Getting Started with Python Tutorial before working through this tutorial xref:master@modules:ROOT:pages:Getting_Started_With_Python.adoc[here].
 
 The first step is determining what libraries we might need. You can always import libraries as needed but we have a strong idea of how we’ll analyze this data and here’s the general logic. The data is in a csv file, so `import pandas as pd` will allow us to read and manipulate the flie. We'll want to perform some math with this array, so `import numpy as np` will be very useful (this is one of the more widely used libraries in science research). And finally, we want to see the data, so `import matplotlib.pyplot as plt` will help us visualize our results.
 
 == Set Up Data for Analyzing
 
-Download the file link:{attachmentsdir}Co60.csv[Co60] and remember where you saved it. Depending on your path, defining the variable should look something like this: `file = “/Users/Jerry/Downloads/Co60.csv”`. Also, feel free to look at the csv file through Excel, Numbers, or Sheets just to get feel for the raw data. Double checking that data is actually in your file and understanding its general structure could save some headaches in the future. 
+Download the file link:{doc-python}Co60.csv[Co60] and remember where you saved it. Depending on your path, defining the variable should look something like this: `file = “/Users/Jerry/Downloads/Co60.csv”`. Also, feel free to look at the csv file through Excel, Numbers, or Sheets just to get feel for the raw data. Double checking that data is actually in your file and understanding its general structure could save some headaches in the future. 
 
 Pandas is an incredibly powerful and useful library for quickly reviewing and visualizing data from an array. Set a new variable as `df` and use Pandas’ `read_csv` function to import you data in to the dataframe, `df = pd.read_csv(file)`. Again, a good bit of practice, check to see that data has come through, `print(df.head(5))`. I just chose 5 rows arbitrarily, but you could print any number rows or the whole data set. Run that code by pressing shift and enter at the same time and you should get an output like this:
 
