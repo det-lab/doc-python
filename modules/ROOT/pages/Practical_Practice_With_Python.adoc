@@ -10,7 +10,7 @@ We are going to follow part of an experiment using five known radioactive sample
 
 == The Set Up
 
-If you have little or no experience with Python, we highly recommend switching over to Getting Started with Python Tutorial before working through this tutorial https://master--hungry-liskov-0501e4.netlify.com/doc-python/getting_started_with_python/[here].
+If you have little or no experience with Python, we highly recommend switching over to Getting Started with Python Tutorial before working through this tutorial https://www.master--hungry-liskov-0501e4.netlify.com/doc-python/getting_started_with_python/[here].
 
 The first step is determining what libraries we might need. You can always import libraries as needed but we have a strong idea of how we’ll analyze this data and here’s the general logic. The data is in a csv file, so `import pandas as pd` will allow us to read and manipulate the flie. We'll want to perform some math with this array, so `import numpy as np` will be very useful (this is one of the more widely used libraries in science research). And finally, we want to see the data, so `import matplotlib.pyplot as plt` will help us visualize our results.
 
