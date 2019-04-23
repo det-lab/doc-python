@@ -13,11 +13,11 @@ Head to the https://www.anaconda.com/distribution/[Anaconda website] and pick th
 
 Each time you want to start a new session with Python or any of the applications in Anaconda, you will need to launch Anaconda. If you chose the Graphical Installer, the process should have created a desktop or applications start button (I locked Anaconda to my dock). If you put the start button in an easily accessible place you’ll use it more!
 
-image::doc-python/modules/ROOT/assets/images/Get_Start/1.png[]
+image::1.png[]
 
 Now, launch Anaconda and the Navigator should popup in a few seconds and select Jupyter Notebook.
 
-image::2.png[]
+image::Get_Start/2.png[]
 
 When you do that, you’ll notice that a terminal or command window will also start. That’s because Jupyter Notebooks and Python in general can be written directly through your machine and not just on the web.
 
